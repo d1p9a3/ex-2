@@ -1,0 +1,301 @@
+KEC@DSLAB-04 MINGW64 ~
+$ git config --global user.name"deepa"
+
+KEC@DSLAB-04 MINGW64 ~
+$ git config --global user.email"priyadeepa1519@gmail.com"
+
+KEC@DSLAB-04 MINGW64 ~
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/etc/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=true
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=Deepa
+user.email=priyadeepa1519@gmail.com
+
+KEC@DSLAB-04 MINGW64 ~
+$ mkdir JavaProgram
+mkdir: cannot create directory ‘JavaProgram’: File exists
+
+KEC@DSLAB-04 MINGW64 ~
+$ mkdir Java program
+
+KEC@DSLAB-04 MINGW64 ~
+$ cd Java program
+bash: cd: too many arguments
+
+KEC@DSLAB-04 MINGW64 ~
+$ mkdir JavaProgramm
+
+KEC@DSLAB-04 MINGW64 ~
+$ cd JavaProgramm/
+
+KEC@DSLAB-04 MINGW64 ~/JavaProgramm
+$ vi Hello.java
+
+KEC@DSLAB-04 MINGW64 ~/JavaProgramm
+$ vi hello.java
+
+KEC@DSLAB-04 MINGW64 ~/JavaProgramm
+$ export PATH=$PATH:"C:\Program Files\Java\jdk1.8.0_202\bin"
+
+KEC@DSLAB-04 MINGW64 ~/JavaProgramm
+$ javac Hello.java
+
+KEC@DSLAB-04 MINGW64 ~/JavaProgramm
+$ java Hello
+Git - VCS
+
+KEC@DSLAB-04 MINGW64 ~/JavaProgramm
+$ git init
+Initialized empty Git repository in C:/Users/KEC/JavaProgramm/.git/
+
+KEC@DSLAB-04 MINGW64 ~/JavaProgramm (master)
+$ ls -al
+total 42
+drwxr-xr-x 1 KEC 197121   0 Mar  8 11:48 ./
+drwxr-xr-x 1 KEC 197121   0 Mar  8 11:43 ../
+drwxr-xr-x 1 KEC 197121   0 Mar  8 11:48 .git/
+-rw-r--r-- 1 KEC 197121 413 Mar  8 11:48 Hello.class
+-rw-r--r-- 1 KEC 197121 125 Mar  8 11:43 Hello.java
+
+KEC@DSLAB-04 MINGW64 ~/JavaProgramm (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Hello.class
+        Hello.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+KEC@DSLAB-04 MINGW64 ~/JavaProgramm (master)
+$ git add*.java
+git: 'add*.java' is not a git command. See 'git --help'.
+
+KEC@DSLAB-04 MINGW64 ~/JavaProgramm (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Hello.class
+        Hello.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+KEC@DSLAB-04 MINGW64 ~/JavaProgramm (master)
+$ git commit -m "first commit"
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Hello.class
+        Hello.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+KEC@DSLAB-04 MINGW64 ~/JavaProgramm (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Hello.class
+        Hello.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+KEC@DSLAB-04 MINGW64 ~/JavaProgramm (master)
+$ git log
+fatal: your current branch 'master' does not have any commits yet
+
+KEC@DSLAB-04 MINGW64 ~/JavaProgramm (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Hello.class
+        Hello.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+KEC@DSLAB-04 MINGW64 ~/JavaProgramm (master)
+$ git add *.java
+warning: in the working copy of 'Hello.java', LF will be replaced by CRLF the next time Git touches it
+
+KEC@DSLAB-04 MINGW64 ~/JavaProgramm (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Hello.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Hello.class
+
+
+KEC@DSLAB-04 MINGW64 ~/JavaProgramm (master)
+$ git commit -m "First commit"
+[master (root-commit) 1410a2c] First commit
+ 1 file changed, 10 insertions(+)
+ create mode 100644 Hello.java
+
+KEC@DSLAB-04 MINGW64 ~/JavaProgramm (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Hello.class
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+KEC@DSLAB-04 MINGW64 ~/JavaProgramm (master)
+$ git log
+commit 1410a2c53bf0925c3ec51d8e7fea7385869af395 (HEAD -> master)
+Author: Deepa <priyadeepa1519@gmail.com>
+Date:   Fri Mar 8 11:52:37 2024 +0530
+
+    First commit
+
+KEC@DSLAB-04 MINGW64 ~/JavaProgramm (master)
+$ git log --stat
+commit 1410a2c53bf0925c3ec51d8e7fea7385869af395 (HEAD -> master)
+Author: Deepa <priyadeepa1519@gmail.com>
+Date:   Fri Mar 8 11:52:37 2024 +0530
+
+    First commit
+
+ Hello.java | 10 ++++++++++
+ 1 file changed, 10 insertions(+)
+
+KEC@DSLAB-04 MINGW64 ~/JavaProgramm (master)
+$ vi Hello.java
+
+KEC@DSLAB-04 MINGW64 ~/JavaProgramm (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Hello.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Hello.class
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+KEC@DSLAB-04 MINGW64 ~/JavaProgramm (master)
+$ git diff
+warning: in the working copy of 'Hello.java', LF will be replaced by CRLF the next time Git touches it
+diff --git a/Hello.java b/Hello.java
+index bc46ddc..988f676 100644
+--- a/Hello.java
++++ b/Hello.java
+@@ -6,5 +6,14 @@ public class Hello
+                System.out.println("Git - VCS");
+        }
+ }
++import java.io.*;
++public class Hello
++{
++       public static void main(String args[])
++       {
++               System.out.println("Git - VCS");
++               System.out.println("After First Commit");
++       }
++}
+
+
+
+KEC@DSLAB-04 MINGW64 ~/JavaProgramm (master)
+$ git add Hello.class
+
+KEC@DSLAB-04 MINGW64 ~/JavaProgramm (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Hello.class
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Hello.java
+
+
+KEC@DSLAB-04 MINGW64 ~/JavaProgramm (master)
+$ git diff
+warning: in the working copy of 'Hello.java', LF will be replaced by CRLF the next time Git touches it
+diff --git a/Hello.java b/Hello.java
+index bc46ddc..988f676 100644
+--- a/Hello.java
++++ b/Hello.java
+@@ -6,5 +6,14 @@ public class Hello
+                System.out.println("Git - VCS");
+        }
+ }
++import java.io.*;
++public class Hello
++{
++       public static void main(String args[])
++       {
++               System.out.println("Git - VCS");
++               System.out.println("After First Commit");
++       }
++}
+
+
+
+KEC@DSLAB-04 MINGW64 ~/JavaProgramm (master)
+$ git diff --staged
+diff --git a/Hello.class b/Hello.class
+new file mode 100644
+index 0000000..6afc231
+Binary files /dev/null and b/Hello.class differ
+
+KEC@DSLAB-04 MINGW64 ~/JavaProgramm (master)
+$ git commit -m "Second Commit"
+[master 9dab40b] Second Commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Hello.class
+
+KEC@DSLAB-04 MINGW64 ~/JavaProgramm (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Hello.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+KEC@DSLAB-04 MINGW64 ~/JavaProgramm (master)
+$
